@@ -19,6 +19,20 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api")
 
 
+def log_connection_failure(error: Exception) -> None:
+    cause = error.__cause__ or error.__context__
+    cause_detail = (
+        f"{type(cause).__name__}: {str(cause)[:300]}"
+        if cause is not None
+        else "no underlying transport detail"
+    )
+    logger.warning(
+        "Groq connection failed: %s; underlying transport error: %s",
+        type(error).__name__,
+        cause_detail,
+    )
+
+
 async def prepare_chat(request: Request) -> ChatService:
     rate_limiter = request.app.state.rate_limiter
     try:
@@ -63,7 +77,7 @@ def provider_error_detail(error: Exception) -> str:
         logger.error("Groq returned no usable streaming answer")
         return "The chat service could not complete your request."
     if isinstance(error, (APITimeoutError, APIConnectionError)):
-        logger.warning("Groq connection failed: %s", type(error).__name__)
+        log_connection_failure(error)
         return "The chat service is temporarily unavailable. Please try again."
     if isinstance(error, RateLimitError):
         logger.warning("Groq rate limit reached")
@@ -152,7 +166,7 @@ async def chat(payload: ChatRequest, request: Request) -> ChatResponse:
             detail="The chat service could not complete your request.",
         ) from error
     except (APITimeoutError, APIConnectionError) as error:
-        logger.warning("Groq connection failed: %s", type(error).__name__)
+        log_connection_failure(error)
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail="The chat service is temporarily unavailable. Please try again.",
