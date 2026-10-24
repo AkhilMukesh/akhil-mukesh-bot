@@ -31,6 +31,25 @@ Open the recruiter interface at <http://localhost:8000>. Check API health at
 <http://localhost:8000/api/health>; interactive API docs are at
 <http://localhost:8000/docs>.
 
+## Deploy publicly for free
+
+This repository includes a Render Blueprint at [render.yaml](render.yaml) for a
+free Python web service.
+
+1. Sign in to [Render](https://dashboard.render.com/) with GitHub and authorize
+   access to `AkhilMukesh/akhil-mukesh-bot`.
+2. Open [Render's Blueprint setup](https://dashboard.render.com/blueprints/new)
+   and select this repository and its `main` branch.
+3. Apply the Blueprint. When prompted, enter your Groq API key for
+   `GROQ_API_KEY`; Render stores this as a private environment variable. Never
+   put the key in the repository or share it in chat.
+4. After the deploy succeeds, open the `onrender.com` URL shown in the Render
+   dashboard and check `/api/health`.
+
+The free web service can spin down after 15 minutes without traffic, so its first
+request after a quiet period may take about a minute while it starts. The
+application and downloadable documents are public at the deployed URL.
+
 ### Add your profile
 
 Edit [api/app/data/profile.json](api/app/data/profile.json) to update your
