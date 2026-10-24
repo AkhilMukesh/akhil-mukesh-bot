@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d1524">
+    <meta name="description" content="Ask about my experience, skills, and fit for your role.">
+    <title>Akhil Mukesh Bot — Candidate profile</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script>
+      let savedTheme;
+      try {
+        savedTheme = localStorage.getItem("askme-theme");
+      } catch {
+        savedTheme = null;
+      }
+      document.documentElement.dataset.theme =
+        savedTheme === "light" || savedTheme === "dark"
+          ? savedTheme
+          : "dark";
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="chatbot-icon" viewBox="0 0 24 24">
+        <path d="M12 5V3m-1 0h2" />
+        <rect x="4" y="6" width="16" height="15" rx="5" />
+        <path d="M4 11H2.5v4H4m16-4h1.5v4H20" />
+        <path d="M8 12h.01M16 12h.01" stroke-width="2.8" />
+        <path d="M9 16c.8.7 1.8 1 3 1s2.2-.3 3-1" />
+        <path d="m19.5 3 .55 1.45L21.5 5l-1.45.55L19.5 7l-.55-1.45L17.5 5l1.45-.55L19.5 3Z" fill="#fb923c" stroke="#fb923c" stroke-linejoin="round" stroke-width=".7" />
+      </symbol>
+      <symbol id="gmail-icon" viewBox="0 0 24 24">
+        <path d="M4 18V7l8 6 8-6v11" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" />
+        <path d="M4 7v11" fill="none" stroke="#4285F4" stroke-linecap="round" stroke-width="2.5" />
+        <path d="M20 7v11" fill="none" stroke="#34A853" stroke-linecap="round" stroke-width="2.5" />
+      </symbol>
+      <symbol id="linkedin-icon" viewBox="0 0 24 24">
+        <path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" fill="#0A66C2" />
+        <path d="M7 10h2v7H7zm1-3a1.2 1.2 0 1 0 0 2.4A1.2 1.2 0 0 0 8 7Zm3 3h2v1c.4-.7 1.1-1.2 2.2-1.2 2 0 2.8 1.2 2.8 3.1V17h-2v-3.7c0-1-.3-1.7-1.3-1.7s-1.7.7-1.7 1.9V17h-2Z" fill="#fff" />
+      </symbol>
+      <symbol id="github-icon" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.62 1.22 3.26.93.1-.72.4-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.16a10.7 10.7 0 0 1 5.6 0c2.13-1.45 3.08-1.16 3.08-1.16.61 1.55.23 2.7.11 2.98.72.79 1.16 1.8 1.16 3.03 0 4.32-2.64 5.28-5.15 5.55.41.36.76 1.04.76 2.1v3.1c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z" />
+      </symbol>
+      <symbol id="phone-icon" viewBox="0 0 24 24">
+        <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7" />
+        <path d="M10 17.5h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7" />
+      </symbol>
+    </svg>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="/" aria-label="Akhil Mukesh Bot home">
+          <span class="brand-mark"><svg class="chatbot-icon" aria-hidden="true"><use href="#chatbot-icon"></use></svg></span>
+          <span>Akhil Mukesh Bot<span class="brand-dot">.</span></span>
+        </a>
+        <div class="topbar-note"><span class="online-dot"></span> AI candidate profile</div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+          <span class="theme-label">Dark mode</span>
+        </button>
+        <a class="topbar-link" href="#conversation">Start a conversation <svg class="chatbot-icon" aria-hidden="true"><use href="#chatbot-icon"></use></svg></a>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="left-column">
+        <section class="card profile-card" aria-labelledby="candidate-name">
+          <div class="profile-content">
+            <p class="eyebrow">CANDIDATE PROFILE</p>
+            <h1 id="candidate-name">Loading profile…</h1>
+            <p class="candidate-title" id="candidate-title"></p>
+            <p class="candidate-location" id="candidate-location"></p>
+            <div class="profile-divider"></div>
+            <p class="profile-bio" id="candidate-bio">A quick, conversational way to explore experience and role fit.</p>
+            <div class="profile-links" id="profile-links"></div>
+            <a class="resume-download" id="resume-download" href="/api/resume" download hidden>
+              <svg class="resume-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 13h6m-6 4h6" /></svg>
+              <span>Download resume (PDF)</span>
+            </a>
+            <a class="resume-download cover-letter-download" id="cover-letter-download" href="/api/cover-letter" download hidden>
+              <svg class="resume-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8m-8 4h8m-8 4h5" /></svg>
+              <span>Download cover letter (PDF)</span>
+            </a>
+          </div>
+          <div class="profile-foot"><span class="verified-icon" aria-hidden="true">✓</span> Answers grounded in the candidate’s profile</div>
+        </section>
+
+      </aside>
+
+      <section class="center-column" id="conversation" aria-labelledby="conversation-heading">
+        <section class="card welcome-card">
+          <div class="welcome-copy">
+            <p class="eyebrow">YOUR NEXT GREAT HIRE STARTS HERE</p>
+            <h2>Get to know the person<br class="desktop-break"> behind the profile.</h2>
+            <p class="welcome-description">Ask a question or share a job description to explore how this candidate’s experience lines up with your role.</p>
+            <button class="ask-invitation" id="ask-invitation" type="button" aria-label="Click me to ask anything about Akhil Mukesh">
+              <span class="invitation-icon"><svg class="chatbot-icon" aria-hidden="true"><use href="#chatbot-icon"></use></svg></span>
+              <span>Click me to ask anything about Akhil Mukesh</span>
+            </button>
+          </div>
+          <div class="welcome-art" aria-hidden="true"><span class="art-spark">✳</span><span class="art-ring"></span><span class="art-line"></span></div>
+          <div class="welcome-stats">
+            <span><span class="stat-icon">✦</span> Profile-grounded answers</span>
+            <span><span class="stat-icon">◎</span> Role-fit perspective</span>
+            <span><svg class="chatbot-icon stat-icon" aria-hidden="true"><use href="#chatbot-icon"></use></svg> Recruiter-ready insights</span>
+          </div>
+        </section>
+
+        <section class="card chat-card" aria-labelledby="conversation-heading">
+          <div class="chat-header">
+            <div class="chat-heading-icon" aria-hidden="true"><svg class="chatbot-icon"><use href="#chatbot-icon"></use></svg></div>
+            <div><h2 id="conversation-heading">Ask about this candidate</h2><p>Career questions, skills, or a role to evaluate</p></div>
+            <button class="reset-button" id="new-chat" type="button" title="Start a new conversation"><span aria-hidden="true">↻</span><span class="reset-label">New chat</span></button>
+          </div>
+
+          <div class="messages" id="messages" aria-live="polite" aria-relevant="additions text">
+            <article class="message assistant-message">
+              <div class="message-avatar assistant-avatar" aria-hidden="true"><svg class="chatbot-icon"><use href="#chatbot-icon"></use></svg></div>
+              <div class="message-body">
+                <div class="message-meta assistant-identity"><strong>Akhil Mukesh Assistant</strong><span>“I speak fluent Java—and promise not to make you debug me.”</span></div>
+                <div class="message-content">Hi! I can help you learn about this candidate’s background and skills. Ask me anything, or share a job description for a fit assessment.</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="suggestions" aria-label="Suggested questions">
+            <button type="button" class="suggestion" data-prompt="What are this candidate’s strongest skills?">Strongest skills <svg class="chatbot-icon" aria-hidden="true"><use href="#chatbot-icon"></use></svg></button>
+            <button type="button" class="suggestion" data-prompt="Summarize this candidate’s relevant experience.">Relevant experience <svg class="chatbot-icon" aria-hidden="true"><use href="#chatbot-icon"></use></svg></button>
+            <button type="button" class="suggestion" data-prompt="What projects has this candidate worked on?">Projects <svg class="chatbot-icon" aria-hidden="true"><use href="#chatbot-icon"></use></svg></button>
+          </div>
+
+          <form class="composer" id="chat-form">
+            <label class="visually-hidden" for="message-input">Ask a question about the candidate</label>
+            <textarea id="message-input" rows="2" maxlength="4000" placeholder="Ask about skills, experience, projects…" required></textarea>
+            <div class="composer-footer">
+              <span class="composer-hint"><span aria-hidden="true">↵</span> Enter to send · Shift + Enter for a new line</span>
+              <button class="send-button" id="send-button" type="submit"><span>Send message</span><span aria-hidden="true"><svg class="chatbot-icon"><use href="#chatbot-icon"></use></svg></span></button>
+            </div>
+          </form>
+          <p class="disclaimer">AI-generated responses are based on the information in this profile and may not include every detail.</p>
+        </section>
+      </section>
+
+      <aside class="right-column">
+        <section class="card fit-card" aria-labelledby="fit-heading">
+          <div class="fit-heading">
+            <div class="fit-icon" aria-hidden="true">⌁</div>
+            <div><p class="eyebrow">ROLE MATCH</p><h2 id="fit-heading">Assess job fit</h2></div>
+          </div>
+          <p class="fit-intro">Paste a job description to start a focused conversation about how this candidate’s verified experience aligns.</p>
+          <form id="fit-form">
+            <label class="visually-hidden" for="job-description">Job description</label>
+            <textarea id="job-description" maxlength="3500" rows="8" placeholder="Paste the job description here…&#10;&#10;Include the responsibilities and qualifications you’d like to assess." required></textarea>
+            <div class="character-count" id="job-count">0 / 3,500</div>
+            <button class="fit-button" id="fit-button" type="submit"><span>✳</span> Assess candidate fit <span aria-hidden="true"><svg class="chatbot-icon"><use href="#chatbot-icon"></use></svg></span></button>
+          </form>
+          <div class="fit-note"><span aria-hidden="true">ⓘ</span><p>The assessment highlights profile evidence and gaps. It won’t make hiring decisions or invent qualifications.</p></div>
+        </section>
+
+        <section class="card guidance-card">
+          <p class="eyebrow">MAKE IT A GOOD MATCH</p>
+          <h2>What would you like to know?</h2>
+          <ul class="guidance-list">
+            <li><span class="guidance-symbol">01</span><span>Ask about specific skills or accomplishments</span></li>
+            <li><span class="guidance-symbol">02</span><span>Compare experience to role requirements</span></li>
+            <li><span class="guidance-symbol">03</span><span>Explore projects, education, or certifications</span></li>
+          </ul>
+        </section>
+
+        <p class="privacy-note"><span aria-hidden="true">◇</span> Only publicly shared profile information is shown.</p>
+      </aside>
+    </main>
+    <footer class="site-footer"><span>Akhil Mukesh Bot<span class="brand-dot">.</span></span><span>Thoughtful conversations. Better connections.</span></footer>
+  </body>
+</html>

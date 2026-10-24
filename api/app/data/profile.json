@@ -1,0 +1,193 @@
+{
+  "_note": "Public professional profile transcribed from Akhil Mukesh's resume.",
+  "name": "Akhil Mukesh",
+  "title": "Java Backend Developer",
+  "location": "Bengaluru, Karnataka",
+  "bio": "Java Backend Developer with 6+ years of experience designing and delivering service-oriented, high-availability applications using Java, Spring Boot, Spring Security, and RESTful microservices in Agile/Scrum teams. Track record of improving application performance, reducing defect rates, and shipping data-driven reporting features across insurance and analytics domains. Experienced across the SDLC, including API design, unit testing with JUnit and Mockito, event-driven integration with Kafka and RabbitMQ, database optimization, and CI/CD. Hands-on exposure to Redis caching, Azure DevOps, and cloud data services. Currently expanding into agentic AI development with LangChain4j and Spring AI.",
+  "public_contact_email": "akhil1997mukesh@gmail.com",
+  "public_phone": "+91 8618097296",
+  "skills": [
+    "Java",
+    "SQL",
+    "PL/SQL",
+    "Python",
+    "Scala",
+    "C",
+    "C++",
+    "JavaScript",
+    "HTML5",
+    "CSS",
+    "Spring Boot",
+    "Spring MVC",
+    "Spring Data JPA",
+    "Spring Security",
+    "OAuth2",
+    "Hibernate",
+    "Microservices",
+    "REST APIs",
+    "JUnit",
+    "Mockito",
+    "SIT/UAT/DIT Test Case Design",
+    "Apache Kafka",
+    "RabbitMQ",
+    "MySQL",
+    "Microsoft SQL Server",
+    "PostgreSQL",
+    "Redis",
+    "Maven",
+    "Gradle",
+    "Jenkins",
+    "Docker",
+    "Azure DevOps",
+    "SonarLint",
+    "Git",
+    "Apache Tomcat",
+    "AWS S3",
+    "Azure Data Analytics",
+    "Apache Spark",
+    "PySpark",
+    "Tableau",
+    "LangChain4j",
+    "Spring AI (in progress)",
+    "Agile/Scrum",
+    "Software Development Life Cycle (SDLC)",
+    "React.js"
+  ],
+  "experience": [
+    {
+      "title": "Developer",
+      "company": "Tata Consultancy Services (TCS)",
+      "dates": "June 2022 – Present",
+      "description": "Project: If-Sampo. Develop and maintain Java/J2EE and Spring Boot features for an enterprise insurance platform serving 5,000+ end users. Helped build a new Spring application, including Spring Security, from the ground up in three-week Agile/Scrum sprints. Author SIT, UAT, and DIT test cases and JUnit/Mockito unit tests, maintaining 80% test coverage across release cycles. Enhanced audit reporting and SQL data processing, improving database query performance by 20% and reducing report generation time. Partner with QA to triage and resolve issues, contributing to a 15% reduction in post-release bug fixes. Technologies: Java, Spring Boot, REST APIs, SonarLint, Azure DevOps, MySQL, JUnit, Mockito."
+    },
+    {
+      "title": "Associate Software Developer",
+      "company": "UST Global",
+      "dates": "January 2021 – June 2022",
+      "description": "Project: Gigaton Analytics. Designed PL/SQL and SQL database objects, stored procedures, and functions to streamline data workflows for 10+ downstream reports. Conducted exploratory data analysis and wrote advanced SQL queries across analyses of 100,000+ records. Built dynamic Tableau dashboards for real-time product insights, used by 30+ stakeholders. Collaborated with cross-functional teams on defect validation, contributing to a 25% improvement in bug-fix turnaround time. Technologies: Apache Spark, PySpark, PL/SQL, Tableau."
+    },
+    {
+      "title": "Internship Trainee",
+      "company": "iPrimed Solutions",
+      "dates": "August 2018 – October 2018",
+      "description": "Project: Foodie, an e-commerce web application. Built a category-based menu tab, a single-page checkout flow, a responsive login form, and reusable UI card components. Technologies: HTML5, CSS, JavaScript, Bootstrap, React.js, MySQL."
+    },
+    {
+      "title": "Internship Trainee",
+      "company": "CDD Society",
+      "dates": "March 2018 – June 2018",
+      "description": "Project: CDD Society Website. Developed a CMS-driven user interface with a responsive carousel/slideshow and cross-device layouts. Designed a contact form and integrated social sharing for Instagram, Facebook, Twitter, and YouTube. Technologies: HTML5, CSS, JavaScript, Bootstrap."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Information Science Engineering",
+      "institution": "East Point College of Engineering & Technology, VTU",
+      "dates": "2019",
+      "location": "Bengaluru, Karnataka"
+    }
+  ],
+  "certifications": [
+    "AWS Cloud Fundamentals — Udemy",
+    "NPTEL Certification — Introduction to Machine Learning and Deep Learning (IMAD)"
+  ],
+  "achievements": [
+    "Participant, GenAI Hackathon (TCS)",
+    "Participant, Capgemini Tech Challenge",
+    "On-the-Spot Team Award for outstanding contribution (TCS)",
+    "Runner-up, Account-Level Technical Quiz (TCS)"
+  ],
+  "projects": [
+    {
+      "title": "Agentic AI Exploration",
+      "organization": "Independent Project",
+      "dates": "2026",
+      "technologies": [
+        "LangChain4j",
+        "Spring AI",
+        "Java",
+        "Python"
+      ],
+      "description": "Building foundational agentic AI components before adopting higher-level frameworks as part of a structured, self-directed upskilling roadmap."
+    },
+    {
+      "title": "Secret Image Processing",
+      "organization": "Independent Project",
+      "dates": "January 2019 – June 2019",
+      "technologies": [
+        "MATLAB",
+        "AWS S3",
+        "Java"
+      ],
+      "description": "Built a system for securely sharing images by encrypting pixel data and distributing encrypted blocks across n participants via AWS S3, with client-side decryption."
+    },
+    {
+      "title": "Google Play Store Data Analysis",
+      "organization": "Mini Project",
+      "technologies": [
+        "Python",
+        "Jupyter Notebook",
+        "Pandas",
+        "NumPy",
+        "Matplotlib"
+      ],
+      "description": "Performed exploratory data analysis on Google Play Store app data using Python, Pandas, NumPy, and Matplotlib to surface trends in ratings, categories, and installs."
+    },
+    {
+      "title": "Foodie",
+      "organization": "iPrimed Solutions",
+      "dates": "August 2018 – October 2018",
+      "technologies": [
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "React.js",
+        "MySQL"
+      ],
+      "description": "Built a category-based menu tab, a single-page checkout flow, a responsive login form, and reusable UI card components for an e-commerce web application."
+    },
+    {
+      "title": "CDD Society Website",
+      "organization": "CDD Society",
+      "dates": "March 2018 – June 2018",
+      "technologies": [
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "description": "Developed a CMS-driven UI with a responsive carousel/slideshow and cross-device layouts. Designed a contact form and integrated social sharing for Instagram, Facebook, Twitter, and YouTube."
+    },
+    {
+      "title": "If-Sampo",
+      "organization": "Tata Consultancy Services (TCS)",
+      "dates": "June 2022 – Present",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "SonarLint",
+        "Azure DevOps",
+        "MySQL"
+      ],
+      "description": "Enterprise insurance platform serving 5,000+ end users. Develop application features, contribute to a Spring/Spring Security application built from the ground up, and improve audit reporting and SQL data processing. Improved query performance by 20%, maintained 80% test coverage, and contributed to a 15% reduction in post-release bug fixes."
+    },
+    {
+      "title": "Gigaton Analytics",
+      "organization": "UST Global",
+      "dates": "January 2021 – June 2022",
+      "technologies": [
+        "Apache Spark",
+        "PySpark",
+        "PL/SQL",
+        "Tableau"
+      ],
+      "description": "Created database objects and workflows supporting 10+ downstream reports, analyzed 100,000+ records per analysis cycle, and built Tableau dashboards used by 30+ stakeholders."
+    }
+  ],
+  "links": {
+    "LinkedIn": "https://www.linkedin.com/in/akhil-mukesh-43376a126",
+    "GitHub": "https://github.com/AkhilMukesh"
+  }
+}
